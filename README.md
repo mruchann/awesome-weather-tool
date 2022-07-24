@@ -7,3 +7,4 @@ A Weather CLI tool gives you weather information if you type latitude and longit
 3. go build -o awesome-weather-tool main.go
 4. ./awesome-weather-tool
 
+Enjoy!
