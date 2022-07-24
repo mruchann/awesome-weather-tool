@@ -15,7 +15,7 @@ func main() {
 	fmt.Scanf("%f", &latitude)
 	fmt.Printf("Longitude? ")
 	fmt.Scanf("%f", &longitude)
-	var URL string = fmt.Sprint("https://api.openweathermap.org/data/3.0/onecall?lat=", latitude, "&lon=", longitude, "&appid=f90f2252ffbb060ba8d8c3bd7e7e500d", "&units=metric")
+	var URL string = fmt.Sprintf("https://api.openweathermap.org/data/3.0/onecall?lat=%f&lon=%f&appid=f90f2252ffbb060ba8d8c3bd7e7e500d&units=metric", latitude, longitude)
 
 	response, err := http.Get(URL)
 	if err != nil {
