@@ -9,13 +9,13 @@ import (
 )
 
 func main() {
-	var latitude, longtitude float64
+	var latitude, longitude float64
 	fmt.Printf("The weather for:\n")
 	fmt.Printf("Latitude? ")
 	fmt.Scanf("%f", &latitude)
-	fmt.Printf("Longtitude? ")
-	fmt.Scanf("%f", &longtitude)
-	var URL string = fmt.Sprint("https://api.openweathermap.org/data/3.0/onecall?lat=", latitude, "&lon=", longtitude, "&appid=f90f2252ffbb060ba8d8c3bd7e7e500d", "&units=metric")
+	fmt.Printf("Longitude? ")
+	fmt.Scanf("%f", &longitude)
+	var URL string = fmt.Sprint("https://api.openweathermap.org/data/3.0/onecall?lat=", latitude, "&lon=", longitude, "&appid=f90f2252ffbb060ba8d8c3bd7e7e500d", "&units=metric")
 
 	response, err := http.Get(URL)
 	if err != nil {
