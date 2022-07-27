@@ -43,6 +43,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	//fmt.Println(text)
 	fmt.Printf("current temp: %v, ", result.Current.Temp)
 	fmt.Printf("feels like: %v, ", result.Current.Feels_like)
 	fmt.Printf("humidity: %v\n", result.Current.Humidity)
