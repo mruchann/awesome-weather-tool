@@ -158,9 +158,9 @@ func (m model) View() string {
 	if m.isLoading {
 		switch m.cursor {
 		case 0:
-			s += fmt.Sprintf("current temp: %.2f, feels like: %.2f, humidity: %.2f", m.weather.Current.Temp, m.weather.Current.Feels_like, m.weather.Current.Humidity)
+			s += fmt.Sprintf("current temp: %.2f, feels like: %.2f, humidity: %.2f\n", m.weather.Current.Temp, m.weather.Current.Feels_like, m.weather.Current.Humidity)
 		case 1:
-			s += fmt.Sprintf("hourly temp: %.2f, feels like: %.2f, humidity: %.2f", m.weather.Hourly[0].Temp, m.weather.Hourly[0].Feels_like, m.weather.Hourly[0].Humidity)
+			s += fmt.Sprintf("hourly temp: %.2f, feels like: %.2f, humidity: %.2f\n", m.weather.Hourly[0].Temp, m.weather.Hourly[0].Feels_like, m.weather.Hourly[0].Humidity)
 		}
 
 	}
