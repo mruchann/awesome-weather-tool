@@ -6,4 +6,4 @@ First, make sure you've installed go from https://go.dev/dl/
 
 1. ```git clone https://github.com/mruchann/awesome-weather-tool.git```
 2. ```cd awesome-weather-tool/task1``` OR ```cd awesome-weather-tool/task2```
-3. go run main.go
+3. ```go run main.go```
